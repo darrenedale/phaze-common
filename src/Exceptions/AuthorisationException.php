@@ -1,0 +1,10 @@
+<?php
+
+declare(strict_types=1);
+
+namespace Phaze\Common\Exceptions;
+
+/** Thrown Azure response to a REST request with a message indicating lack of authorisation. */
+class AuthorisationException extends PhazeException
+{
+}

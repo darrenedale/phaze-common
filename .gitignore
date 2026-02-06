@@ -1,0 +1,5 @@
+.ash_history
+.composer/
+.idea/
+composer.lock
+vendor/

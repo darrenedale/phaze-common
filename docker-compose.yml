@@ -1,0 +1,122 @@
+version: "3.4"
+
+services:
+  cli-8.0:
+    container_name: "phaze-common-cli-8.0"
+    build:
+      dockerfile_inline: |
+        FROM darrenedale/equit:php-8.0-cli
+        RUN printf "phaze\nphaze\n" | adduser -u 1000 -h /phaze phaze
+        USER phaze
+      context: "./"
+    stdin_open: true
+    tty: true
+    volumes:
+      - "./:/phaze"
+    working_dir: "/phaze"
+    extra_hosts:
+      - "xdebug-client:host-gateway"
+    environment:
+      XDEBUG_SESSION: 1
+      XDEBUG_CONFIG: "client_host=xdebug-client"
+      PHP_IDE_CONFIG: "serverName=Phaze Common CLI"
+
+  cli-8.1:
+    container_name: "phaze-common-cli-8.1"
+    build:
+      dockerfile_inline: |
+        FROM darrenedale/equit:php-8.1-cli
+        RUN printf "phaze\nphaze\n" | adduser -u 1000 -h /phaze phaze
+        USER phaze
+      context: "./"
+    stdin_open: true
+    tty: true
+    volumes:
+      - "./:/phaze"
+    working_dir: "/phaze"
+    extra_hosts:
+      - "xdebug-client:host-gateway"
+    environment:
+      XDEBUG_SESSION: 1
+      XDEBUG_CONFIG: "client_host=xdebug-client"
+      PHP_IDE_CONFIG: "serverName=Phaze Common CLI"
+
+  cli-8.2:
+    container_name: "phaze-common-cli-8.2"
+    build:
+      dockerfile_inline: |
+        FROM darrenedale/equit:php-8.2-cli
+        RUN printf "phaze\nphaze\n" | adduser -u 1000 -h /phaze phaze
+        USER phaze
+      context: "./"
+    stdin_open: true
+    tty: true
+    volumes:
+      - "./:/phaze"
+    working_dir: "/phaze"
+    extra_hosts:
+      - "xdebug-client:host-gateway"
+    environment:
+      XDEBUG_SESSION: 1
+      XDEBUG_CONFIG: "client_host=xdebug-client"
+      PHP_IDE_CONFIG: "serverName=Phaze Common CLI"
+
+  cli-8.3:
+    container_name: "phaze-common-cli-8.3"
+    build:
+      dockerfile_inline: |
+        FROM darrenedale/equit:php-8.3-cli
+        RUN printf "phaze\nphaze\n" | adduser -u 1000 -h /phaze phaze
+        USER phaze
+      context: "./"
+    stdin_open: true
+    tty: true
+    volumes:
+      - "./:/phaze"
+    working_dir: "/phaze"
+    extra_hosts:
+      - "xdebug-client:host-gateway"
+    environment:
+      XDEBUG_SESSION: 1
+      XDEBUG_CONFIG: "client_host=xdebug-client"
+      PHP_IDE_CONFIG: "serverName=Phaze Common CLI"
+
+  cli-8.4:
+    container_name: "phaze-common-cli-8.4"
+    build:
+      dockerfile_inline: |
+        FROM darrenedale/equit:php-8.4-cli
+        RUN printf "phaze\nphaze\n" | adduser -u 1000 -h /phaze phaze
+        USER phaze
+      context: "./"
+    stdin_open: true
+    tty: true
+    volumes:
+      - "./:/phaze"
+    working_dir: "/phaze"
+    extra_hosts:
+      - "xdebug-client:host-gateway"
+    environment:
+      XDEBUG_SESSION: 1
+      XDEBUG_CONFIG: "client_host=xdebug-client"
+      PHP_IDE_CONFIG: "serverName=Phaze Common CLI"
+
+  cli-8.5:
+    container_name: "phaze-common-cli-8.5"
+    build:
+      dockerfile_inline: |
+        FROM darrenedale/equit:php-8.5-cli
+        RUN printf "phaze\nphaze\n" | adduser -u 1000 -h /phaze phaze
+        USER phaze
+      context: "./"
+    stdin_open: true
+    tty: true
+    volumes:
+      - "./:/phaze"
+    working_dir: "/phaze"
+    extra_hosts:
+      - "xdebug-client:host-gateway"
+    environment:
+      XDEBUG_SESSION: 1
+      XDEBUG_CONFIG: "client_host=xdebug-client"
+      PHP_IDE_CONFIG: "serverName=Phaze Common CLI"
