@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Phaze\Types;
+namespace Phaze\Common\Types;
 
 use Phaze\Common\Contracts\Types\Stringable as StringableContract;
 use Phaze\Common\Exceptions\InvalidValueException;
