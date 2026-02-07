@@ -1,5 +1,3 @@
-version: "3.4"
-
 services:
   cli-8.2:
     container_name: "phaze-common-cli-8.2"
