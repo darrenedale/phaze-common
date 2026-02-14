@@ -11,7 +11,7 @@ class TestCase extends PhpUnitTestCase
     /**
      * Signal that a test uses a mechanism other than PHPUnit assertions and expectations to verify its expectations.
      */
-    public static function markTestExternallyVerified(): void
+    final public static function markTestExternallyVerified(): void
     {
         self::assertTrue(true);
     }
