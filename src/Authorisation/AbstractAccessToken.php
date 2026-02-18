@@ -24,6 +24,6 @@ abstract class AbstractAccessToken implements AuthorisationContract
     public function hasExpired(): bool
     {
         $time = time();
-        return $this->notBefore() >= $time || $this->expiresOn() <= $time;
+        return $this->notBefore() > $time || $this->expiresOn() <= $time;
     }
 }
